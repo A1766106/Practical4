@@ -9,7 +9,7 @@ using namespace std;
 Airplane::Airplane(string given_callsign, Person given_thePilot, Person given_theCoPilot)
 {
     callsign = given_callsign;
-    thePilot = given_thePilot;
+    thePilot = given_thePilot;     
     theCoPilot = given_theCoPilot;
 }
 
