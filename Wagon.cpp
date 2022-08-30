@@ -52,7 +52,7 @@ void Wagon::emptyWagon()
 
 void Wagon::printCapybaras()
 {
-    for(int i=0;i<4;i++)
+    for(int i=0;i<count;i++)
     {
         cout << str[i] << " " << age[i] << endl;;
     }
