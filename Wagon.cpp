@@ -37,10 +37,10 @@ void Wagon::emptyWagon()
     {
         cout << "Wagon was empty" << endl;
     }
-    else
-    {
-        cout << "Wagon is now empty" << endl;
-    }
+    // else
+    // {
+    //     cout << "Wagon is now empty" << endl;
+    // }
     count = 0;
     for(int i = 0;i<4;i++)
     {
