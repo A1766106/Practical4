@@ -11,6 +11,7 @@ class Wagon
 {
     public:
         string str[4];
+        int age[4];
         int count;
         Wagon();                               // create an empty wagonobject
         bool addCapybara(Capybara newCapy);    // adds a Capybara to the wagon, returns false if full

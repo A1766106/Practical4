@@ -12,6 +12,7 @@ Wagon::Wagon()
     for(int i=0;i<4;i++)
     {
         str[i] = "";
+        age[i] = 0;
     }
 }
 
@@ -20,6 +21,7 @@ bool Wagon::addCapybara(Capybara newCapy)
     if(count<4)
     {
         str[count] = newCapy.getName();
+        age[count] = newCapy.getAge();
         count++;
         return true;
 
@@ -39,11 +41,12 @@ void Wagon::emptyWagon()
     {
         cout << "Wagon is now empty" << endl;
     }
-    for(int i=0;i<4;i++)
+    count = 0;
+    for(int i = 0;i<4;i++)
     {
         str[i] = "";
+        age[i] = 0;
     }
-    count = 0;
 
 }
 
@@ -51,6 +54,6 @@ void Wagon::printCapybaras()
 {
     for(int i=0;i<4;i++)
     {
-        cout << str[i] << endl;
+        cout << str[i] << " " << age[i] << endl;;
     }
 }
